@@ -18,7 +18,7 @@ X = titanic.drop('survived', axis=1)
 model.fit(X, y)
 print(model.score(X, y))
 
-def survive(model, pclass=1, sex=1, age=2):
+def survive(model, pclass=1, sex=1, age=2): #enter you data here 
     x =np.array([pclass, sex, age]).reshape(1, 3)
     print(model.predict(x))
     print(model.predict_proba(x))
